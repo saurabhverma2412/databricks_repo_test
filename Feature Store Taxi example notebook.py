@@ -39,7 +39,7 @@
 # COMMAND ----------
 
 raw_data = spark.read.format("delta").load("/databricks-datasets/nyctaxi-with-zipcodes/subsampled")
-display(raw_data)
+display(raw_data) #test
 
 # COMMAND ----------
 
