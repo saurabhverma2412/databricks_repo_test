@@ -335,3 +335,7 @@ model_quality_summary_2 = track_model_quality(get_product_quality(), predicted_q
 # COMMAND ----------
 
 plot_summary(model_quality_summary_1, model_quality_summary_2)
+
+# COMMAND ----------
+
+predict_stream.stop()
