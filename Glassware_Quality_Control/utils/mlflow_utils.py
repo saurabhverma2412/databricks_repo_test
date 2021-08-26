@@ -46,7 +46,7 @@ def get_run_details(runid):
   
   artifact_uri = mlflowclient.get_run(runid).to_dictionary()["info"]["artifact_uri"]
 #   run_details['confusion_matrix_uri'] = "/" + artifact_uri.replace(":","") + "/confusion_matrix.pkl"
-  run_details['confusion_matrix_uri'] = "runs:/" + best_runid+ "/artifacts/confusion_matrix.pkl"
+  run_details['confusion_matrix_uri'] = "runs:/" + runid+ "/artifacts/confusion_matrix.pkl"
 #   run_details['spark-model'] = "/" + artifact_uri.replace(":","") + "/spark-model"
   run_details['spark-model'] = "runs:/" + runid+ "/spark-model"
   

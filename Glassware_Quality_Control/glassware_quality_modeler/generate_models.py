@@ -21,8 +21,8 @@ print(best_rf_run["metrics"])
 
 # COMMAND ----------
 
-display(plot_confusion_matrix(best_rf_run['confusion_matrix_uri']))
-# display(plot_confusion_matrix('file:/dbfs/mnt/artifacts/confusion_matrix.pkl'))
+# display(plot_confusion_matrix(best_rf_run['confusion_matrix_uri']))
+# display(plot_confusion_matrix('file:/dbfs/mnt/artifacts/confusion_matrix_random_forest.pkl'))
 
 
 # COMMAND ----------
@@ -45,8 +45,8 @@ print(best_dt_run["metrics"])
 
 # COMMAND ----------
 
-display(plot_confusion_matrix(best_dt_run['confusion_matrix_uri']))
-# display(plot_confusion_matrix('file:/dbfs/mnt/artifacts/confusion_matrix.pkl'))
+# display(plot_confusion_matrix(best_dt_run['confusion_matrix_uri']))
+# display(plot_confusion_matrix('file:/dbfs/mnt/artifacts/confusion_matrix_decision_tree.pkl'))
 
 # COMMAND ----------
 
